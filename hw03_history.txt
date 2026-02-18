@@ -1,0 +1,380 @@
+    1  chsh -s /bin/zsh
+    2  passwd
+    3  exit
+    4  pwd
+    5  ls students/pratheekp
+    6  ls /mnt/scratch/CS131_jelenag/students/pratheekp
+    7  ls
+    8  pwd
+    9  cd /mnt/scr
+   10  cd /mnt/scratch/CS131_jelanag/
+   11  pwd
+   12  cd /mnt/scratch/CS131_jelenag
+   13  cd students/pratheekp
+   14  pwd
+   15  cd ..
+   16  cd
+   17  pwd
+   18  cd
+   19  pwd
+   20  cd ..
+   21  cd
+   22  pwd
+   23  cd ../..
+   24  cd
+   25  cd -
+   26  cd
+   27  cd projects
+   28  cd projects/
+   29  pwd
+   30  cd ../..
+   31  cd projects/
+   32  cd
+   33  cd ..
+   34  cd projects/
+   35  ls
+   36  cd
+   37  cd ..
+   38  ls
+   39  cd
+   40  mkdir testdir
+   41  cd testdir
+   42  mkdir dir1 dir2 dir3
+   43  ls
+   44  rmdir dir1 dir2 dir3
+   45  ls
+   46  mkdir team1/dir1
+   47  mkdir -p testdir/team/newdir
+   48  ls
+   49  cd testdir
+   50  ls
+   51  cd ..
+   52  ls
+   53  rmdir testdir
+   54  rm -rf testdir
+   55  ls
+   56  cd ..
+   57  ls
+   58  cd testdir
+   59  mkdir ../testdir2
+   60  cd ..
+   61  ls
+   62  rm testdir2
+   63  rm testdir2/
+   64  cd testdir2
+   65  rm
+   66  rm --help
+   67  cd ..
+   68  rmdir testdir2
+   69  ls
+   70  mkdir testdir2
+   71  rm -d testdir2
+   72  ls
+   73  mkdir -p testdir2/newtest/dir1
+   74  ls
+   75  cd testdir2/newtest/dir1
+   76  mkdir ../../newtest2
+   77  ls testdir2
+   78  cd ..
+   79  ls
+   80  cd ..
+   81  ls
+   82  rm -r testdir2
+   83  ls
+   84  mkdir newdir
+   85  rmdir newdir
+   86  cd testdir
+   87  touch file1 file2 file3
+   88  ls
+   89  cd ..
+   90  cp ../../amazon_reviews_50.tsv
+   91  cp ../../amazon_reviews_50.tsv ~/
+   92  ls
+   93  cp ../../amazon_reviews_50.tsv ~/myreviews.tsv
+   94  ls
+   95  cd myreviews.tsv
+   96  cp --help
+   97  --help
+   98  ls --help
+   99  pwd
+  100  ls
+  101  ls testdir
+  102  passwd
+  103  script pratheekp_h2.log
+  104  cd
+  105  ls
+  106  pwd
+  107  ls
+  108  cd ../..
+  109  pwd
+  110  ls
+  111  cat amazon_reviews_60.tsv
+  112  pwd
+  113  ls -l pratheekp_h2.log
+  114  cd
+  115  ls
+  116  rm pratheekp_h2log
+  117  rm pratheekp_h2.log
+  118  script pratheekp_h2.log
+  119  pwd
+  120  ls
+  121  ../..
+  122  cd ../..
+  123  pwd
+  124  cat amazon_reviews_60.tsv | head -n 5
+  125  cat -n 5 amazon_reviews_60.tsv
+  126  pwd
+  127  ls
+  128  cd ../..
+  129  pwd
+  130  head -n 5 amazon_reviews_60.tsv
+  131  tail -n 5 amazon_reviews_60.tsv
+  132  less amazon_reviews_60.tsv
+  133  wc -l amazon_reviews_60.tsv
+  134  cd
+  135  mkdir homework_assignments
+  136  ls
+  137  mkdir homework_assignments/hw2
+  138  mv pratheekp_h2.log homework_assignments/hw2/
+  139  ls
+  140  cd homework_assignments/hw2
+  141  ls
+  142  cd ..
+  143  ls
+  144  pwd
+  145  exit
+  146  cd
+  147  cd ../..
+  148  ls
+  149  head -n 5 amazon_reviews_60.tsv
+  150  cd
+  151  ls
+  152  rm pratheekp_h2.log
+  153  script pratheekp_h2.log
+  154  scp -r
+  155  scp -r pratheekp@172.20.25.9/mnt/scratch/CS131_jelenag/students/pratheekp/homework_assignments/hw2 ./
+  156  pwd
+  157  scp -r pratheekp@172.20.25.9:/mnt/scratch/CS131_jelenag/students/pratheekp/homework_assignments/hw2 ./
+  158  exit
+  159  pwd
+  160  cd ..
+  161  ls
+  162  cd ..
+  163  ls
+  164  cd projects
+  165  ls
+  166  cd team09_sec3
+  167  ls
+  168  cd ..
+  169  ls nonexis
+  170  help
+  171  help ls
+  172  help list
+  173  cd
+  174  ls
+  175  head -n 5 myreviews.tsv
+  176  ls testdir
+  177  ls file1
+  178  cat file 1
+  179  cat file1
+  180  cat file2
+  181  rm file1
+  182  cd testdir
+  183  cat file1
+  184  cd ../..
+  185  cd ..
+  186  cd projects
+  187  ls
+  188  ls > ~/testdir/file1
+  189  cd
+  190  cat testdir/file1
+  191  cd ../../..
+  192  ls
+  193  cd CS131_jelenag
+  194  ls
+  195  cd projects
+  196  echo "hello world1" > ~/testdir/file2
+  197  echo "bye world!" >>~/testdir/file2
+  198  cd
+  199  cd testdir
+  200  cat file2
+  201  > file1
+  202  cat file1
+  203  womp womp < file1
+  204  ls < file1
+  205  cat file1
+  206  cd ..
+  207  cd projects
+  208  ls
+  209  cd team09_sec3
+  210  ls
+  211  touch count.txt
+  212  ls
+  213  cd ..
+  214  cat amazon_hp.txt
+  215  pwd
+  216  wc -l amazon_hp.tsv > projects/team09_sec3/count.txt
+  217  cd projects/team09_sec3
+  218  ls
+  219  cat count.txt
+  220  cd ..
+  221  wc -l amazon_hp.tsv
+  222  cd projects/team09_sec3
+  223  ls
+  224  cat log.txt
+  225  who
+  226  who | wc -l
+  227  ls -l
+  228  cd ..
+  229  grep "Harry Potter" amazon_reviews_full.tsv
+  230  ls
+  231  cd ../..
+  232  cat amazon_reviews_full.tsv | head -1
+  233  head -n 1 amazon_reviews.tsv
+  234  head -n 1 amazon_reviews_full.tsv
+  235  cat amazon_reviews_full.tsv | grep -i "harry potter" | cut -f7 | sort | uniq -c | sort -nr
+  236  head -3
+  237  head -n 3 amazon_reviews_full.tsv
+  238  cat amazon_reviews_full.tsv | grep -i "harry potter" | wc -l >> projects/team09_sec3/count.txt
+  239  cat projects/team09_sec3/count.txt
+  240  cd ..
+  241  cd projects
+  242  ls
+  243  cd team09_sec3
+  244  ls
+  245  mkdir data
+  246  df -h
+  247  pwd
+  248  df -h /mnt/scratch/CS131_jelenag/projects/team09_sec3
+  249  ls
+  250  cd data
+  251  pwd
+  252  exit
+  253  vi my_first_shell_script
+  254  ls
+  255  vi my_first_shell_script.sh
+  256  ls
+  257  cat my_first_shell_script.sh
+  258  cd hw2
+  259  ls
+  260  cd ..
+  261  cd homework_assignments
+  262  ls
+  263  cd hw2
+  264  ls
+  265  head -n 5 pratheekp_h2.log
+  266  cd ../..
+  267  head -n 5 hw2
+  268  head -n 5 hw2/pratheekp_h2.log
+  269  ls
+  270  ls run*
+  271  cd ../..
+  272  ls run*
+  273  head -n 5 run_test.sh
+  274  head -n 5 run_project2.sh
+  275  cat run_project2.sh
+  276  cd projects
+  277  cd ..
+  278  grep -i amazon_reviews_full.tsv | wc -l
+  279  grep -i 'refund' amazon_reviews_full.tsv | wc -l
+  280  grep -ic 'refund' amazon_reviews_full.tsv
+  281  cd
+  282  pwd
+  283  cd ..
+  284  cat quiz_amazon_reviews.tsv | wc -l
+  285  head -n 5 quiz_amazon_reviews.tsv
+  286  grep -ic "Rainbow Six" quiz_amazon_reviews.tsv
+  287  grep -ic "Bridget Jones's diary" quiz_amazon_reviews.tsv
+  288  grep -ic "The testament" quiz_amazon_reviews.tsv
+  289  grep -ic "harry potter and the sorcerer's stone" quiz_amazon_reviews.tsv
+  290  head -n 1 quiz_amazon_reviews.tsv
+  291  cat quiz_amazon_reviews.tsv | ls product_category
+  292  cat quiz_amazon_reviews.tsv | cut product_category
+  293  cat quiz_amazon_reviews.tsv | cut -f product_category
+  294  grep -in "great" quiz_amazon_reviews.tsv
+  295  grep -in "great" quiz_amazon_reviews.tsv | head -1
+  296  grep -in "great " quiz_amazon_reviews.tsv | head -1
+  297  grep -in "great?" quiz_amazon_reviews.tsv | head -1
+  298  ls -l amazon_reviews_full.tsv
+  299  grep "10008" quiz_amazon_reviews.tsv
+  300  cut -f product_category quiz_amazon_reviews.tsv | sort -u
+  301  cut -f 7 quiz_amazon_reviews.tsv | sort -u
+  302  cut -f 7 quiz_amazon_reviews.tsv | sort -u | wc -l Books
+  303  cut -f 7 quiz_amazon_reviews.tsv | sort -u
+  304  cut -f 7 quiz_amazon_reviews.tsv
+  305  cut -f 7 quiz_amazon_reviews.tsv | grep -c "Books"
+  306  cut -f 7 quiz_amazon_reviews.tsv | sort -u
+  307  cut -f 7 quiz_amazon_reviews.tsv | grep -c "Electronics"
+  308  cut -f 7 quiz_amazon_reviews.tsv | grep -c "Music"
+  309  cut -f 7 quiz_amazon_reviews.tsv | grep -c "Video"
+  310  cut -f 7 quiz_amazon_reviews.tsv | grep -c "Video DVD"
+  311  ls data_profiles
+  312  cd
+  313  cp ../../data_profiles.sh ./
+  314  ls
+  315  ls
+  316  bash data_profiles.sh
+  317  vi data_profiles.sh
+  318  cat data_profile.txt
+  319  bash data_profiles.sh
+  320  q
+  321  i data_profiles.sh
+  322  vi data_profiles.sh
+  323  cat data_profiles.txt
+  324  cat data_profile.txt
+  325  vi data_profiles.sh
+  326  cat data_profile.txt
+  327  vi data_profiles.sh
+  328  head -n 1 ../../amazon_full_reviews.tsv
+  329  head -n 1 ../../amazon_reviews_full.tsv
+  330  cat data_profile.txt
+  331  cat data_profiles.sh
+  332  vi data_profiles.sh
+  333  cat data_profiles.sh
+  334  cat data_profile.txt
+  335  vi data_profiles.sh
+  336  cat data_profile.txt
+  337  cat amazon_reviewa_full.tsv | head -1
+  338  cat ../../amazon_reviewa_full.tsv | head -1
+  339  ls ../../
+  340  cd ../..
+  341  cd
+  342  ls ../..
+  343  cd ../..
+  344  ls
+  345  ls *.tsv
+  346  cd
+  347  cat ../../amazon_reviews_full.tsv | head -1
+  348  ls
+  349  cat data_profile.txt
+  350  vi data_profile.sh
+  351  ls
+  352  vi data_profiles.sh
+  353  cat data_profile.txt
+  354  ls
+  355  rmdir testdir
+  356  rmdir -r testdir
+  357  rm -r testdir
+  358  ls
+  359  head -n 1 amazon_reviews_50.tsv
+  360  ls ../../*50.tsv
+  361  rm amazon_reviews_50.tsv
+  362  head -n 1 myreviews.tsv
+  363  ls ../../myreviews.tsv
+  364  rm myreviews.tsv
+  365  ls
+  366  cd homework_assignments
+  367  ls
+  368  cd hw2
+  369  ls
+  370  cd ..
+  371  ls hw2
+  372  rm -r hw2
+  373  ls
+  374  cd homework_assignments
+  375  cd ..
+  376  mkdir hw03
+  377  ls
+  378  cd hw03
+  379  script hw03_session.txt
+  380  history > hw03_history.txt

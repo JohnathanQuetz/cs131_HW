@@ -1,0 +1,18 @@
+   2729 Digital_Ebook_Purchase
+   2072 Video DVD
+   1830 Books
+   1586 Digital_Video_Download
+   1252 Mobile_Apps
+    325 Music
+    159 Video
+     27 Digital_Music_Purchase
+      6 Toys
+      3 Video Games
+      3 Outdoors
+      2 PC
+      1 Watches
+      1 Tools
+      1 Musical Instruments
+      1 Lawn and Garden
+      1 Electronics
+      1 Camera
