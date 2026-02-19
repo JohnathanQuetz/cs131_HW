@@ -1,0 +1,20 @@
+A list of all the commands used for hw3 (for convenience as the script is messy)
+(All from hw03 folder):
+1)
+head -n 1 /mnt/scratch/CS131_jelenag/amazon_reviews_full.tsv > amazon_reviews_10k_mystery.tsv
+grep -Ei "murder|mystery|detective|crime|thriller|twist|spoiler|plot" /mnt/scratch/CS131_jelenag/amazon_reviews_full.tsv | shuf -n 10000 >> amazon_reviews_10k_mystery.tsv
+cat amazon_reviews_10k_mystery.tsv | wc -l > count.txt
+tail -n+2 amazon_reviews_10k_mystery.tsv | wc -l >> count.txt
+echo "First line is the header." >> count.txt
+
+2)
+tail -n+2 amazon_reviews_10k_mystery.tsv | cut -f8 | sort| uniq -c| sort -nr > hist_star_rating.txt
+
+3) tail -n+2 amazon_reviews_10k_mystery.tsv | cut -f2 | sort| uniq -c| sort -nr | head -10 > top_customers.txt
+
+4) tail -n+2 amazon_reviews_10k_mystery.tsv | cut -f4,6 | sort| uniq -c| sort -nr | head -10 > top_products.txt
+
+5) tail -n+2 amazon_reviews_10k_mystery.tsv | cut -f7 | sort| uniq -c| sort -nr  > hist_categories.txt
+
+6) vi README.md
+history > hw03_history.txt
