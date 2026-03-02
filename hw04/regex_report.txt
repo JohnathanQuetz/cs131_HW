@@ -1,0 +1,22 @@
+grep -Eic "great(est)?" amazon_reviews_10k_random_hw4.tsv
+277
+
+tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f6 | grep "^[A-Z]" | head -5
+Bad Boys - Special Edition
+Infamy
+The Girl on the Train: A Novel
+Dust
+Explorers
+
+Explanation: '^' indicates that the line should start with the following pattern, '[A-Z]' is the set of all capital letters.
+
+
+tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f6 | grep -ic "[0-9]$"
+83
+
+tail -n+2 amazon_reviews_10k_random_hw4.tsv | grep -vi "return" | head -n 5
+US	22952308	RA9Q8KRX2BFK	B00004STUL	479207939	Bad Boys - Special Edition	Video DVD	5	0	0	N	Y	Five Stars	Good movie	2014-08-01
+US	43569399	R26EGZ5JMLB54V	B0066PI2VC	241785351	Infamy	Digital_Video_Download	1	4	10	N	N	Great show.	Great show... full of leftist BS.  The first season isn't even over and there has already been belligerent plays on the names, Bush, Cheney and Reagan, along with several other leftist sterotypes.  This is a very good show and the play on political stereotypes is unnecessary.	2014-11-01
+US	52541154	R1AG4F99T0J3NM	B00L9B7IKE	627793267	The Girl on the Train: A Novel	Digital_Ebook_Purchase	4	0	0	N	Y	Four Stars	Enjoyable easy read. Original story	2015-03-22
+US	38910405	RHN9DIV478DYS	0399157573	436698575	Dust	Books	5	0	1	N	Y	Five Stars	great	2015-06-02
+US	12653036	R2DLN87ZULHZQL	B002ZCLH5S	141735468	Explorers	Digital_Video_Download	2	0	1	N	N	The Ultimate Movie Review! - [...] - @tss5078	When I was a kid, Explorers was one of my favorite movies. Ever since I can remember I've had a fascination with outer space and all the possibilities that are out there. That being said, Explorers was the perfect movie to me when I was a kid, but watching it again for the first time in fifteen years, things have changed. The story follows three young boys who start having weird dreams. They decide to build what they see in their dreams and to their surprise they build a spaceship. The boys are pulled into outer space, where they meet a group of aliens who are obsessed with our TV broadcasts and use different characters and scenes in order to communicate. As a kid, the story was magical, but as an adult, it was very lame. The hysterical aliens were unbelievably annoying and all the 'cool, futuristic' stuff is now simple classic eighties cheese. As for the cast, they are terrific, obviously, that's why two of the three boys grew up to be stars. Explorers was a favorite of mine as a kid, but that's really who it's aimed at. I watched it again because it's streaming and I loved it then, but watching it now kind of ruined it for me. This isn't like the Goonies, which is good any time at any age. Explorers is a kids movie that doesn't grow up as you do.	2013-02-23

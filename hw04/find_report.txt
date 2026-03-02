@@ -1,0 +1,25 @@
+1.
+ls note?.txt
+note1.txt
+notes.txt
+
+Explanation: '?' is a wildcard that matches exactly 1 of any character.
+
+2. 
+find ~/hw04 -type f -name *.tsv
+fake.tsv
+
+find ~ -type f -size +1M
+../hw03/.git/objects/79/8ea0d5b509e1d73ca8e56872d112a0743e7486
+../hw03/amazon_reviews_10k_mystery.tsv
+
+find ~ -type f -mtime -1
+../.bash_history
+../hw04/find_report.txt
+../hw04/noteA.md
+../hw04/notes.txt
+../hw04/hw04_run.sh
+../hw04/fake.tsv
+../hw04/note1.txt
+../hw04/.bashrc
+

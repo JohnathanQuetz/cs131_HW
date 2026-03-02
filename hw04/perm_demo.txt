@@ -1,0 +1,30 @@
+1.
+ls -ld share
+drwxrwx--- 2 pratheekp jelenag 4096 Mar  1 22:48 share
+Explanation: rwx for owner and groups means they have read + write + execute access, or full access. Meanwhile --- for others means they have no access to 'share/' at all.
+
+2.
+Permissions of share contents before:
+drwxr-xr-x 2 pratheekp jelenag 4096 Mar  1 22:53 dir3
+-rw-r--r-- 1 pratheekp jelenag    0 Mar  1 22:53 perm1
+-rw-r--r-- 1 pratheekp jelenag    0 Mar  1 22:53 perm2
+
+Permissions after:
+drwxrwx--- 2 pratheekp jelenag 4096 Mar  1 22:53 dir3
+-rwxrwx--- 1 pratheekp jelenag    0 Mar  1 22:53 perm1
+-rwxrwx--- 1 pratheekp jelenag    0 Mar  1 22:53 perm2
+
+I think execute(x) on directories means permission to enter a directory, since a directory isn't a typical 'executable' file, like a shell script.
+
+3.
+ln perm1 perm1_hard
+ln -s perm1 perm1_sym
+ls -li
+
+Output (only perm1 related lines):
+62128479 -rwxrwx--- 2 pratheekp jelenag    0 Mar  1 22:53 perm1
+62128479 -rwxrwx--- 2 pratheekp jelenag    0 Mar  1 22:53 perm1_hard
+62129286 lrwxrwxrwx 1 pratheekp jelenag    5 Mar  1 23:56 perm1_sym -> perm1
+
+Explanation:
+An inode is what actually stores a file's metadata. A file name is just a directory entry that points to a specific inode number. A hard link points to the same inode number, so even if the original file was deleted, the metadata can be accessed through the hard link. A symbolic link, on the other hand, points to the file it was linked to, rather than the inode with the metadata. The metadata cannot be accessed through a symbolic link if the original filename was removed.

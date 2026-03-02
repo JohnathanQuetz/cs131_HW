@@ -1,0 +1,42 @@
+1.
+tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f8 | sort | uniq -c | sort -nr | tee out/hist_star_10k.txt
+    634 5
+    168 4
+     80 3
+     69 1
+     49 2
+
+2.
+tail -n +2 amazon_reviews_10k_random_hw4.tsv | cut -f5 | sort | uniq -c | sort -nr | head | awk '{print $2 "\t" $1}' | sort -t $'\t' -k1,1 > top10_pid.tsv
+tail -n +2 amazon_reviews_10k_random_hw4.tsv | cut -f5,6 | sort -t $'\t' -k1,1 | uniq > pid_title.tsv
+join -t $'\t' top10_pid.tsv pid_title.tsv > top10_pid_title.tsv
+
+245449872	9	Catching Fire (Hunger Games Trilogy, Book 2)
+245449872	9	Catching Fire (The Hunger Games)
+245449872	9	Mockingjay (Hunger Games Trilogy, Book 3)
+245449872	9	The Hunger Games (Book 1)
+245449872	9	The Hunger Games (Hunger Games Trilogy, Book 1)
+
+3.
+tail -n +2 amazon_reviews_10k_random_hw4.tsv | head -n 500 | cut -f5 | sort | uniq > first500_pids.txt
+tail -n +2 amazon_reviews_10k_random_hw4.tsv | head -n 500 | cut -f5 | sort | uniq > first500_pids.txt
+
+# only first 500: 357
+comm -23 first500_pids.txt last500_pids.txt | wc -l
+
+# only last 500: 364
+comm -13 first500_pids.txt last500_pids.txt | wc -l
+
+# both: 74
+comm -12 first500_pids.txt last500_pids.txt | wc -l
+
+# The product ids are not mostly overlapping.
+
+Part F)
+echo "Hello world" > notes.txt
+echo "Goodbye world" >> notes.txt
+
+echo "track errors" 2> notes.txt
+echo "track errors" &> notes.txt
+
+tail -n+2 amazon_reviews_10k_random_hw4.tsv | grep -ic "Hunger Games" | tee notes.txt

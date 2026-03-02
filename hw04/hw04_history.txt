@@ -1,0 +1,848 @@
+    1  chsh -s /bin/zsh
+    2  passwd
+    3  exit
+    4  pwd
+    5  ls students/pratheekp
+    6  ls /mnt/scratch/CS131_jelenag/students/pratheekp
+    7  ls
+    8  pwd
+    9  cd /mnt/scr
+   10  cd /mnt/scratch/CS131_jelanag/
+   11  pwd
+   12  cd /mnt/scratch/CS131_jelenag
+   13  cd students/pratheekp
+   14  pwd
+   15  cd ..
+   16  cd
+   17  pwd
+   18  cd
+   19  pwd
+   20  cd ..
+   21  cd
+   22  pwd
+   23  cd ../..
+   24  cd
+   25  cd -
+   26  cd
+   27  cd projects
+   28  cd projects/
+   29  pwd
+   30  cd ../..
+   31  cd projects/
+   32  cd
+   33  cd ..
+   34  cd projects/
+   35  ls
+   36  cd
+   37  cd ..
+   38  ls
+   39  cd
+   40  mkdir testdir
+   41  cd testdir
+   42  mkdir dir1 dir2 dir3
+   43  ls
+   44  rmdir dir1 dir2 dir3
+   45  ls
+   46  mkdir team1/dir1
+   47  mkdir -p testdir/team/newdir
+   48  ls
+   49  cd testdir
+   50  ls
+   51  cd ..
+   52  ls
+   53  rmdir testdir
+   54  rm -rf testdir
+   55  ls
+   56  cd ..
+   57  ls
+   58  cd testdir
+   59  mkdir ../testdir2
+   60  cd ..
+   61  ls
+   62  rm testdir2
+   63  rm testdir2/
+   64  cd testdir2
+   65  rm
+   66  rm --help
+   67  cd ..
+   68  rmdir testdir2
+   69  ls
+   70  mkdir testdir2
+   71  rm -d testdir2
+   72  ls
+   73  mkdir -p testdir2/newtest/dir1
+   74  ls
+   75  cd testdir2/newtest/dir1
+   76  mkdir ../../newtest2
+   77  ls testdir2
+   78  cd ..
+   79  ls
+   80  cd ..
+   81  ls
+   82  rm -r testdir2
+   83  ls
+   84  mkdir newdir
+   85  rmdir newdir
+   86  cd testdir
+   87  touch file1 file2 file3
+   88  ls
+   89  cd ..
+   90  cp ../../amazon_reviews_50.tsv
+   91  cp ../../amazon_reviews_50.tsv ~/
+   92  ls
+   93  cp ../../amazon_reviews_50.tsv ~/myreviews.tsv
+   94  ls
+   95  cd myreviews.tsv
+   96  cp --help
+   97  --help
+   98  ls --help
+   99  pwd
+  100  ls
+  101  ls testdir
+  102  passwd
+  103  script pratheekp_h2.log
+  104  cd
+  105  ls
+  106  pwd
+  107  ls
+  108  cd ../..
+  109  pwd
+  110  ls
+  111  cat amazon_reviews_60.tsv
+  112  pwd
+  113  ls -l pratheekp_h2.log
+  114  cd
+  115  ls
+  116  rm pratheekp_h2log
+  117  rm pratheekp_h2.log
+  118  script pratheekp_h2.log
+  119  pwd
+  120  ls
+  121  ../..
+  122  cd ../..
+  123  pwd
+  124  cat amazon_reviews_60.tsv | head -n 5
+  125  cat -n 5 amazon_reviews_60.tsv
+  126  pwd
+  127  ls
+  128  cd ../..
+  129  pwd
+  130  head -n 5 amazon_reviews_60.tsv
+  131  tail -n 5 amazon_reviews_60.tsv
+  132  less amazon_reviews_60.tsv
+  133  wc -l amazon_reviews_60.tsv
+  134  cd
+  135  mkdir homework_assignments
+  136  ls
+  137  mkdir homework_assignments/hw2
+  138  mv pratheekp_h2.log homework_assignments/hw2/
+  139  ls
+  140  cd homework_assignments/hw2
+  141  ls
+  142  cd ..
+  143  ls
+  144  pwd
+  145  exit
+  146  cd
+  147  cd ../..
+  148  ls
+  149  head -n 5 amazon_reviews_60.tsv
+  150  cd
+  151  ls
+  152  rm pratheekp_h2.log
+  153  script pratheekp_h2.log
+  154  scp -r
+  155  scp -r pratheekp@172.20.25.9/mnt/scratch/CS131_jelenag/students/pratheekp/homework_assignments/hw2 ./
+  156  pwd
+  157  scp -r pratheekp@172.20.25.9:/mnt/scratch/CS131_jelenag/students/pratheekp/homework_assignments/hw2 ./
+  158  exit
+  159  pwd
+  160  cd ..
+  161  ls
+  162  cd ..
+  163  ls
+  164  cd projects
+  165  ls
+  166  cd team09_sec3
+  167  ls
+  168  cd ..
+  169  ls nonexis
+  170  help
+  171  help ls
+  172  help list
+  173  cd
+  174  ls
+  175  head -n 5 myreviews.tsv
+  176  ls testdir
+  177  ls file1
+  178  cat file 1
+  179  cat file1
+  180  cat file2
+  181  rm file1
+  182  cd testdir
+  183  cat file1
+  184  cd ../..
+  185  cd ..
+  186  cd projects
+  187  ls
+  188  ls > ~/testdir/file1
+  189  cd
+  190  cat testdir/file1
+  191  cd ../../..
+  192  ls
+  193  cd CS131_jelenag
+  194  ls
+  195  cd projects
+  196  echo "hello world1" > ~/testdir/file2
+  197  echo "bye world!" >>~/testdir/file2
+  198  cd
+  199  cd testdir
+  200  cat file2
+  201  > file1
+  202  cat file1
+  203  womp womp < file1
+  204  ls < file1
+  205  cat file1
+  206  cd ..
+  207  cd projects
+  208  ls
+  209  cd team09_sec3
+  210  ls
+  211  touch count.txt
+  212  ls
+  213  cd ..
+  214  cat amazon_hp.txt
+  215  pwd
+  216  wc -l amazon_hp.tsv > projects/team09_sec3/count.txt
+  217  cd projects/team09_sec3
+  218  ls
+  219  cat count.txt
+  220  cd ..
+  221  wc -l amazon_hp.tsv
+  222  cd projects/team09_sec3
+  223  ls
+  224  cat log.txt
+  225  who
+  226  who | wc -l
+  227  ls -l
+  228  cd ..
+  229  grep "Harry Potter" amazon_reviews_full.tsv
+  230  ls
+  231  cd ../..
+  232  cat amazon_reviews_full.tsv | head -1
+  233  head -n 1 amazon_reviews.tsv
+  234  head -n 1 amazon_reviews_full.tsv
+  235  cat amazon_reviews_full.tsv | grep -i "harry potter" | cut -f7 | sort | uniq -c | sort -nr
+  236  head -3
+  237  head -n 3 amazon_reviews_full.tsv
+  238  cat amazon_reviews_full.tsv | grep -i "harry potter" | wc -l >> projects/team09_sec3/count.txt
+  239  cat projects/team09_sec3/count.txt
+  240  cd ..
+  241  cd projects
+  242  ls
+  243  cd team09_sec3
+  244  ls
+  245  mkdir data
+  246  df -h
+  247  pwd
+  248  df -h /mnt/scratch/CS131_jelenag/projects/team09_sec3
+  249  ls
+  250  cd data
+  251  pwd
+  252  exit
+  253  vi my_first_shell_script
+  254  ls
+  255  vi my_first_shell_script.sh
+  256  ls
+  257  cat my_first_shell_script.sh
+  258  cd hw2
+  259  ls
+  260  cd ..
+  261  cd homework_assignments
+  262  ls
+  263  cd hw2
+  264  ls
+  265  head -n 5 pratheekp_h2.log
+  266  cd ../..
+  267  head -n 5 hw2
+  268  head -n 5 hw2/pratheekp_h2.log
+  269  ls
+  270  ls run*
+  271  cd ../..
+  272  ls run*
+  273  head -n 5 run_test.sh
+  274  head -n 5 run_project2.sh
+  275  cat run_project2.sh
+  276  cd projects
+  277  cd ..
+  278  grep -i amazon_reviews_full.tsv | wc -l
+  279  grep -i 'refund' amazon_reviews_full.tsv | wc -l
+  280  grep -ic 'refund' amazon_reviews_full.tsv
+  281  cd
+  282  pwd
+  283  cd ..
+  284  cat quiz_amazon_reviews.tsv | wc -l
+  285  head -n 5 quiz_amazon_reviews.tsv
+  286  grep -ic "Rainbow Six" quiz_amazon_reviews.tsv
+  287  grep -ic "Bridget Jones's diary" quiz_amazon_reviews.tsv
+  288  grep -ic "The testament" quiz_amazon_reviews.tsv
+  289  grep -ic "harry potter and the sorcerer's stone" quiz_amazon_reviews.tsv
+  290  head -n 1 quiz_amazon_reviews.tsv
+  291  cat quiz_amazon_reviews.tsv | ls product_category
+  292  cat quiz_amazon_reviews.tsv | cut product_category
+  293  cat quiz_amazon_reviews.tsv | cut -f product_category
+  294  grep -in "great" quiz_amazon_reviews.tsv
+  295  grep -in "great" quiz_amazon_reviews.tsv | head -1
+  296  grep -in "great " quiz_amazon_reviews.tsv | head -1
+  297  grep -in "great?" quiz_amazon_reviews.tsv | head -1
+  298  ls -l amazon_reviews_full.tsv
+  299  grep "10008" quiz_amazon_reviews.tsv
+  300  cut -f product_category quiz_amazon_reviews.tsv | sort -u
+  301  cut -f 7 quiz_amazon_reviews.tsv | sort -u
+  302  cut -f 7 quiz_amazon_reviews.tsv | sort -u | wc -l Books
+  303  cut -f 7 quiz_amazon_reviews.tsv | sort -u
+  304  cut -f 7 quiz_amazon_reviews.tsv
+  305  cut -f 7 quiz_amazon_reviews.tsv | grep -c "Books"
+  306  cut -f 7 quiz_amazon_reviews.tsv | sort -u
+  307  cut -f 7 quiz_amazon_reviews.tsv | grep -c "Electronics"
+  308  cut -f 7 quiz_amazon_reviews.tsv | grep -c "Music"
+  309  cut -f 7 quiz_amazon_reviews.tsv | grep -c "Video"
+  310  cut -f 7 quiz_amazon_reviews.tsv | grep -c "Video DVD"
+  311  ls data_profiles
+  312  cd
+  313  cp ../../data_profiles.sh ./
+  314  ls
+  315  ls
+  316  bash data_profiles.sh
+  317  vi data_profiles.sh
+  318  cat data_profile.txt
+  319  bash data_profiles.sh
+  320  q
+  321  i data_profiles.sh
+  322  vi data_profiles.sh
+  323  cat data_profiles.txt
+  324  cat data_profile.txt
+  325  vi data_profiles.sh
+  326  cat data_profile.txt
+  327  vi data_profiles.sh
+  328  head -n 1 ../../amazon_full_reviews.tsv
+  329  head -n 1 ../../amazon_reviews_full.tsv
+  330  cat data_profile.txt
+  331  cat data_profiles.sh
+  332  vi data_profiles.sh
+  333  cat data_profiles.sh
+  334  cat data_profile.txt
+  335  vi data_profiles.sh
+  336  cat data_profile.txt
+  337  cat amazon_reviewa_full.tsv | head -1
+  338  cat ../../amazon_reviewa_full.tsv | head -1
+  339  ls ../../
+  340  cd ../..
+  341  cd
+  342  ls ../..
+  343  cd ../..
+  344  ls
+  345  ls *.tsv
+  346  cd
+  347  cat ../../amazon_reviews_full.tsv | head -1
+  348  ls
+  349  cat data_profile.txt
+  350  vi data_profile.sh
+  351  ls
+  352  vi data_profiles.sh
+  353  cat data_profile.txt
+  354  ls
+  355  rmdir testdir
+  356  rmdir -r testdir
+  357  rm -r testdir
+  358  ls
+  359  head -n 1 amazon_reviews_50.tsv
+  360  ls ../../*50.tsv
+  361  rm amazon_reviews_50.tsv
+  362  head -n 1 myreviews.tsv
+  363  ls ../../myreviews.tsv
+  364  rm myreviews.tsv
+  365  ls
+  366  cd homework_assignments
+  367  ls
+  368  cd hw2
+  369  ls
+  370  cd ..
+  371  ls hw2
+  372  rm -r hw2
+  373  ls
+  374  cd homework_assignments
+  375  cd ..
+  376  mkdir hw03
+  377  ls
+  378  head -n 1 /mnt/scratch/CS131_jelenag/amazon_reviews_full.tsv > amazon_reviews_10k_mystery.tsv
+  379  cat amazon_reviews_10k_mystery.tsv
+  380  grep -Ei "murder|mystery|detective|crime|thriller|twist|spoiler|plot" amazon_reviews_10k_mystery.tsv
+  381  tail -n 1 amazon_reviews_10k_mystery.tsv
+  382  grep -Ei "murder|mystery|detective|crime|thriller|twist|spoiler|plot" amazon_reviews_full.tsv | shuf -n 10000 >> amazon_reviews_10k_mystery.tsv
+  383  ls
+  384  grep -Ei "murder|mystery|detective|crime|thriller|twist|spoiler|plot" /mnt/scratch/CS131_jelenag/amazon_reviews_full.tsv | shuf -n 10000 >> amazon_reviews_10k_mystery.tsv
+  385  tail -n 1 amazon_reviews_10k_mystery.tsv
+  386  cat amazon_reviews_10k_mystery.tsv | wc -l > count.txt
+  387  tail -n+2 amazon_reviews_10k_mystery.tsv | wc -l >> count.txt
+  388  cat count.txt
+  389  echo "The first line is the header." >> count.txt
+  390  cat count.txt
+  391  tail -n+2 amazon_reviews_10k_mystery.tsv | cut -f8 | sort | uniq -c | sort -nr > hist_star_rating.txt
+  392  head -n 5 hist_star_rating.txt
+  393  tail -n+2 amazon_reviews_10k_mystery.tsv | cut -f2 | sort | uniq -c | sort -nr > top_customers.txt
+  394  tail -n+2 amazon_reviews_10k_mystery.tsv | cut -f4,6 | sort | uniq -c | sort -nr | head -10 > top_products.txt
+  395  head -n 5 top_products.txt
+  396  tail -n+2 amazon_reviews_10k_mystery.tsv | cut -f7 | sort | uniq -c | sort -nr > hist_categories.txt
+  397  touch README.md
+  398  vi README.md
+  399  cat hist_star_rating.txt
+  400  cat top_products.txt
+  401  cat top_customers.txt
+  402  head -n 5 top_products.txt
+  403  wc -l top_products.txt
+  404  wc -l top_customers.txt
+  405  tail -n +2 sample_10k.csv | cut -d',' -f8 | sort | uniq -c | sort -nr
+  406  tail -n+2 amazon_reviews_10k_mystery.tsv | cut -f2 | sort
+  407  tail -n+2 amazon_reviews_10k_mystery.tsv | cut -f2 | sort | uniq -c | sort -nr | head -10 > top_customers.txt
+  408  wc -l top_customers.txt
+  409  ls
+  410  cat top_customers.txt
+  411  cat top_products.txt
+  412  wc -l product_category
+  413  wc -l product_category.txt
+  414  wc -l hist_categories.txt
+  415  cat hist_categories.txt
+  416  vi README.md
+  417  ls hw03
+  418  ls -l hw03
+  419  cd hw03
+  420  git init
+  421  git remote add origin git@github.com:sjsu-cs131-spring26/pratheek_pala_HW_repo.git
+  422  ls -l
+  423  ls
+  424  ls -la
+  425  cd
+  426  cd hw03
+  427  script hw03_session.txt
+  428  history > hw03_history.txt
+  429  vi history.txt
+  430  ls
+  431  vi hw03_history.txt
+  432  wc -l hw03_history.txt
+  433  wc -l hw03_session.txt
+  434  vi hw03_session.txt
+  435  wc -l hw03_session.txt
+  436  git status
+  437  git add .
+  438  git commit -m "Added all required deliverables for HW3"
+  439  git config --global user.email "pratheek.pala@gmail.com"
+  440  git config --global user.name "JohnathanQuetz"
+  441  git commit -m "Added all required deliverables for HW3"
+  442  git push -u origin master
+  443  git remote -v
+  444  ls -al ~/.ssh
+  445  eval "$(ssh-agent -s)"
+  446  exit
+  447  ls
+  448  mkdir hw04
+  449  cd hw04
+  450  touch hw04_run.sh
+  451  cd ../..
+  452  cd projects
+  453  ls *9
+  454  ls
+  455  ls *9*
+  456  cd team09_sec3
+  457  ls
+  458  rm -r data
+  459  cd
+  460  cd hw04
+  461  touch notes.txt note1.txt noteA.md .bashrc fake.tsv
+  462  touch find_report.txt
+  463  find -type f -name "^note?.txt"
+  464  ls "^note?.txt"
+  465  ls "note*"
+  466  ls note*
+  467  find -type f -name "note?.txt"
+  468  find . -type f -name "note?.txt"
+  469  ls "note?.txt"
+  470  ls note?.txt
+  471  echo "ls note?.txt" >> find_report.txt
+  472  cat find_report.txt
+  473  ls note?.txt >> find_report.txt
+  474  echo "" >> find_report.txt
+  475  cat find_report.txt
+  476  ls *.tsv
+  477  find -type f -name "*.tsv"
+  478  echo "ls *.tsv" >> find_report.txt
+  479  ls *.tsv >> find_report.txt
+  480  echo "" >> find_report.txt
+  481  find . -type f -size +1M
+  482  pwd
+  483  find /mnt/scratch -type f -size +1M | head -3
+  484  find /mnt/scratch -type f -size +1M | head -3 2> /dev/null
+  485  pwd
+  486  find .. -type f -size +1M
+  487  find .. -type f -size +500k
+  488  cat find_report.txt
+  489  echo "find .. -type f -size +1M" >>find_report.txt
+  490  find .. -type f -size +1M >> find_report.txt
+  491  cat find_report.txt
+  492  echo "" >> find_report.txt
+  493  find .. -type f -mtime -1
+  494  echo "find .. -type f -mtime -1" >> find_report.txt
+  495  find .. -type f -mtime -1 >> find_report.txt
+  496  echo "" >> find_report.txt
+  497  unzip -p /mnt/scratch/CS131_jelenag/amazon_reviews_multilingual_US_v1_00.tsv.zip | head -1000 > logs/a.log
+  498  mkdir -p logs
+  499  ls logs
+  500  ls log*
+  501  ls
+  502  ls *.tsv
+  503  unzip -p /mnt/scratch/CS131_jelenag/amazon_reviews_multilingual_US_v1_00.tsv.zip | head -1000 > logs/a.log
+  504  unzip -p /mnt/scratch/CS131_jelenag/amazon_reviews_multilingual_US_v1_00.tsv.zip | head -1000 > logs/b.log
+  505  unzip -p /mnt/scratch/CS131_jelenag/amazon_reviews_multilingual_US_v1_00.tsv.zip | head -1000 > logs/c.log
+  506  find logs -name "*.log" -exec wc -l {} \;
+  507  find logs -name "*.log" | xargs wc -l
+  508  ls
+  509  regex_report.txt
+  510  (unzip -p /mnt/scratch/CS131_jelenag/amazon_reviews_multilingual_US_v1_00.tsv.zip| head -n1 && unzip -p /mnt/scratch/CS131_jelenag/amazon_reviews_multilingual_US_v1_00.tsv.zip | tail -n +2 | shuf -n 1000) > amazon_reviews_10k_random_hw4.tsv
+  511  grep -Eic "great[est]" amazon_reviews_10k_random_hw4.tsv
+  512  grep -Eic "great|greatest" amazon_reviews_10k_random_hw4.tsv
+  513  echo "grep -Eic "great|greatest" amazon_reviews_10k_random_hw4.tsv" > regex_report.txt
+  514  grep -Eic "great|greatest" amazon_reviews_10k_random_hw4.tsv >> regex_report.txt
+  515  echo "" >> regex_report.txt
+  516  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f6 | grep -E "^[A-Z]*" | head -5
+  517  echo "tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f6 | grep -E "^[A-Z]*"" >> regex_report.txt
+  518   regex_report.txt
+  519  cat regex_report.txt
+  520  echo "" >> regex_report.txt
+  521  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f6 | grep -E "^[A-Z]" | tail -5
+  522  vi amazon_reviews_10k_random_hw4.tsv
+  523  vi regex_report.txt
+  524  echo "grep -Eic "great|greatest" amazon_reviews_10k_random_hw4.tsv" >> regex_report.txt
+  525  vi regex_report.txt
+  526  grep -Eic "great|greatest" amazon_reviews_10k_random_hw4.tsv >> regex_report.txt
+  527  cat regex_report.txt
+  528  echo "" >> regex_report.txt
+  529  vi regex_report.txt
+  530  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f6 | grep "^[A-Z]" | head -5 >> regex_report.txt
+  531  head -n 1 amazon_reviews_10k_random_hw4.tsv
+  532  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f6 | grep -ic "[0-9]$" >> regex_report.txt
+  533  vi regex_report.txt
+  534  tail -n+2 amazon_reviews_10k_random_hw4.tsv | grep -ic "return"
+  535  tail -n+2 amazon_reviews_10k_random_hw4.tsv | grep -vic "return"
+  536  vi regex_report.txt
+  537  ls data/raw
+  538  tail -n+2 data/raw/atp_matches.csv | cut -d, -f8 | sort| uniq -c| sort -nr | head -100 > top100_winners.txt
+  539  head -n 15 top100_winners.txt
+  540  cut -d, -f1,2,5 data/raw/atp_matches.csv | sort -u > matches_skinny.csv
+  541  ls
+  542  head -n 5 matches_skinny.csv
+  543  rm matches_skinny.csv
+  544  ls
+  545  head -n 1 data/raw/atp_matches.csv | cut -d, -f1,2,5 > matches_skinny.csv
+  546  tail -n+2 data/raw/atp_matches.csv | cut -d, -f1,2,5 | sort -u >> matches_skinny.csv
+  547  head -n 5 matches_skinny.csv
+  548  cd ../../projects
+  549  ls
+  550  cd team09_sec3
+  551  ls
+  552  cat run_project2.sh
+  553  ls
+  554  head -n 5 freq_winner_ioc.txt
+  555  ls data
+  556  ls raw
+  557  ls samples
+  558  ls -l
+  559  cd data
+  560  ls -l
+  561  cat /etc/group
+  562  grep -i "sec" /etc/group
+  563  sudo groupadd group_team09_sec3
+  564  ls
+  565  cd raw
+  566  ls
+  567  cd ../samples
+  568  ls
+  569  cd ../..
+  570  cat run_project2.sh
+  571  ls data/raw
+  572  wc -l atp_players.csv
+  573  wc -l data/atp_players.csv
+  574  cd data
+  575  head -n 5 atp_players.csv
+  576  ls -l
+  577  cd raw
+  578  head -n 1 atp_players.csv
+  579  cd ../..
+  580  ls
+  581  player_id
+  582  name_first
+  583  name_last
+  584  hand
+  585  dob
+  586  ioc
+  587  height
+  588  wc -l data/raw/atp_rankings.csv
+  589  ls
+  590  head -n 10 freq_winner_ioc.txt
+  591  cd ../../projects
+  592  ls
+  593  cd team09_sec3
+  594  script stepC_part2.log
+  595  ls
+  596  rm stepC_part2.log top100_winners.txt matches_skinny.csv
+  597  ls
+  598  mkdir out
+  599  mv freq_surface.txt freq_winner_ioc.txt out/
+  600  ls
+  601  ls out
+  602  tail -n+2 data/raw/atp_matches.csv | cut -d, -f8 | grep -v '^$' |sort | uniq -c | sort -nr | head -100 tee out/top100_winners.txt | head -5
+  603  tail -n+2 data/raw/atp_matches.csv | cut -d, -f8 | grep -v '^$' |sort | uniq -c | sort -nr | head -100 | tee out/top100_winners.txt | head -5
+  604  ls out
+  605  tail -n+2 data/raw/atp_matches.csv | cut -d, -f8 | grep -v '^$' |sort | uniq -c | sort -nr | head -100 tee out/top100_winners.txt | head -5 2> errors.txt
+  606  cat errors.txt
+  607  tail -n+2 data/raw/atp_matches.csv | cut -d, -f8 | grep -v '^$' |sort | uniq -c | sort -nr | head -100 tee out/top100_winners.txt 2> errors.txt | head -5
+  608  cat errors.txt
+  609  tail -n+2 data/raw/atp_matches.csv | cut -d, -f8 | grep -v '^$' |sort | uniq -c | sort -nr | head -100 |tee out/top100_winners.txt 2> errors.txt | head -5
+  610  cat errors.txt
+  611  head -n 1 data/raw/atp_matches | cut -d, -f1,2,5 tee out/matches_skinny.csv 2> errors.txt
+  612  head -n 1 data/raw/atp_matches.csv | cut -d, -f1,2,5 tee out/matches_skinny.csv 2> errors.txt
+  613  cat errors.txt
+  614  head -n 1 data/raw/atp_matches.csv | cut -d, -f1,2,5 |tee out/matches_skinny.csv 2> errors.txt
+  615  tail -n+2 data/raw/atp_matches.csv | cut -d, -f1,2,5 >> out/matches_skinny.csv 2> errors.txt
+  616  cat errors.txt
+  617  head -n 5 out/matches_skinny.csv
+  618  tail -n+2 data/raw/atp_matches.csv | cut -d, -f1,2,5 |sort -u |tee -a out/matches_skinny.csv | head -5
+  619  tail -n+2 data/raw/atp_matches.csv | cut -d, -f1,2,5|sort -u |tee -a out/matches.csv | head -5
+  620  ls out
+  621  rm matches_skinny.csv matches.csv
+  622  rm out/matches_skinny.csv out/matches.csv
+  623  ls out
+  624  head -n 1 data/raw/atp_matches.csv | cut -d, -f1,2,5 |tee out/matches_skinny.csv
+  625  tail -n+2 data/raw/atp_matches.csv | cut -d, -f1,2,5|sort -u >> out/matches_skinny.csv
+  626  head -n 5 out/matches_skinny.csv
+  627  wc -l out/matches_skinny.csv
+  628  cd ../../projects/team09_sec3
+  629  ls
+  630  vi run_project2.sh
+  631  tail -n 5 run_project2.sh
+  632  script project2_session.txt
+  633  rm project2_session.txt
+  634  rm out/top100_winners.txt
+  635  rm project2_session.txt
+  636  tail -n+2 data/raw/atp_matches.csv | cut -d, -f8 | grep -v '^$' |sort | uniq -c | sort -nr | head -100 tee out/top100_winners.txt 2> errors.txt | head -5
+  637  cat errors.txt
+  638  rm errors.txt
+  639  ls
+  640  script project2_session.txt
+  641  ls
+  642  tail -n 5 run_project2.sh
+  643  ls out
+  644  wc -l top100_winners.txt
+  645  wc -l out/top100_winners.txt
+  646  vi run_project2.sh
+  647  tail -n 5 run_project2.sh
+  648  head -n 3 run_project2.sh
+  649  ls
+  650  wc -l project2_session.txt
+  651  vi run_project2.sh
+  652  cd ../../projects
+  653  ls
+  654  cd team09_sec3
+  655  ls
+  656  cd data
+  657  ls
+  658  ls samples
+  659  cd ..
+  660  ls out
+  661  wc -l out/matches_skinny.csv
+  662  wc -l out/freq_winner_ioc.txt
+  663  wc -l freq_surface.txt
+  664  wc -l out/freq_surface.txt
+  665  ls -l out
+  666  ls -l data/samples
+  667  ssh -T git@github.com
+  668  ssh -vT git@github.com
+  669  git clone git@github.com:sjsu-cs131-spring26/sec03-team9-tennis-sports.git
+  670  pwd
+  671  ls
+  672  vi run_project2.sh
+  673  ls -a
+  674  cat .gitignore
+  675  cd
+  676  ls
+  677  mkdir gitTest
+  678  cd gitTest
+  679  git init
+  680  ls
+  681  ls -a
+  682  cd ..
+  683  rm -r gitTest
+  684  cd ../../projects/team09_sec3
+  685  git remote-v
+  686  git remote -v
+  687  ls
+  688  pwd
+  689  cd ../../projects/team09_sec3
+  690  ls
+  691  vi run_projects2.sh
+  692  ls
+  693  vi run_project2.sh
+  694  wc -l
+  695  ls -l
+  696  chmod 774 run_project2.sh
+  697  chmod 664 matches_skinny.csv top100_winners.txt
+  698  chmod 664 out/matches_skinny.csv out/top100_winners.txt
+  699  ls -l
+  700  ls -l out
+  701  vi out/top100_winners.txt
+  702  cat data/raw/atp_matches.csv | cut -d, -f8 | grep -i "^[a-b ]+$" | wc -l
+  703  cat data/raw/atp_matches.csv | cut -d, -f8 | grep "^[0-9 ]+$" | wc -l
+  704  wc -l data/raw/atp_matches
+  705  wc -l data/raw/atp_matches.csv
+  706  cut -d, -f8 data/raw/atp_matches.csv | wc -l
+  707  cut -d, -f8 data/raw/atp_matches.csv | head 
+  708  cut -d, -f8 data/raw/atp_matches.csv | grep "^[0-9 ]+$" | wc -l
+  709  cut -d, -f8 data/raw/atp_matches.csv | grep -c "^[0-9 ]+\r?$"
+  710  cut -d, -f8 data/raw/atp_matches.csv | grep -c "[0-9]{6}" | wc -l
+  711  cut -d, -f8 data/raw/atp_matches.csv | grep -c "[0-9]{6}" 
+  712  chmod 775 out
+  713  ls -l
+  714  cd ../../projects/team09_sec3
+  715  head out/matches_skinny.csv
+  716  vi run_project2.sh
+  717  ls
+  718  cd hw04
+  719  ls
+  720  ls logs
+  721  cat regex_report.txt
+  722  cat pipelines_report.txt
+  723  ls
+  724  ls -a
+  725  cat find_report/txt
+  726  cat find_report.txt
+  727  cd ..
+  728  ls
+  729  cd hw04
+  730  ls pipe*
+  731  touch pipeline_report.txt
+  732  head -n 1 amazon_reviews_10k_random_hw4.tsv
+  733  ls
+  734  mkdir out
+  735  ls
+  736  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f8 | sort | uniq -c | sort -nr | tee out/hist_star_10k.txt | tee pipelines_report.txt
+  737  ls
+  738  cat out/hist_star_10k.txt
+  739  cat pipelines_report.txt
+  740  vi pipelines_report.txt
+  741  ls
+  742  cd hw04
+  743  ls
+  744  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f5 | sort | uniq -c | sort -nr | head | cut -f2 > top10_pid.txt
+  745  cat top10_pid.txt
+  746  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f5 | sort | uniq -c | sort -nr | head | tee top10_pid.txt
+  747  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f5 | sort | uniq -c | sort -nr | head | cut -d" " -f2| tee top10_pid.txt
+  748  cd hw04
+  749  tail -n +2 amazon_reviews_10k_random_hw4.tsv | cut -f5 | sort | uniq -c | sort -nr | head | awk '{print $2 "\t" $1}'
+  750  tail -n +2 amazon_reviews_10k_random_hw4.tsv | cut -f5 | sort | uniq -c | sort -nr | head | awk '{print $2 "\t" $1}' | sort -t $'\t' -k1,1 | tee top10_pid.txt
+  751  tail -n +2 amazon_reviews_10k_random_hw4.tsv | cut -f5 | sort | uniq -c | sort -nr | head | awk '{print $2 "\t" $1}' | sort -t $'\t' -k1,1 | tee top10_pid.tsv
+  752  ls
+  753  rm top10_pid.txt
+  754  ls
+  755  tail -n +2 amazon_reviews_10k_random_hw4.tsv | cut -f5,6 | sort -t $'\t' -k1,1 | uniq > pid_title.tsv
+  756  join -t $'\t' top10_pid.tsv pid_title.tsv > top10_pid_title.tsv
+  757  ls
+  758  wc -l top10_pid_title.tsv
+  759  vi top10_pid_title.tsv
+  760  ls
+  761  vi pipelines_report.txt
+  762  tail -n +2 amazon_reviews_10k_random_hw4.tsv | head -n 500 | cut -f5 | sort | uniq > first500_pids.txt
+  763  tail -n +2 amazon_reviews_10k_random_hw4.tsv | tail -n 500 | cut -f5 | sort | uniq > last500_pids.txt
+  764  comm -23 pids_first5k.sorted.txt pids_last5k.sorted.txt | wc -l
+  765  comm -23 first500_pids.txt last500_pids.txt | wc -l
+  766  comm -13 first500_pids.txt last500_pids.txt | wc -l
+  767  comm -12 first500_pids.txt last500_pids.txt | wc -l
+  768  vi pipelines_report.txt
+  769  cd hw04
+  770  head -n 5 top10_pid_title.tsv
+  771  vi pipelines_report.txt
+  772  vi find_report.txt
+  773  vi regex_report.txt
+  774  grep -Eic "great(est)?" amazon_reviews_10k_random_hw4.tsv
+  775  vi regex_report.txt
+  776  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f6 | grep "^[A-Z]" | wc -l
+  777  vi regex_report.txt
+  778  tail -n+2 amazon_reviews_10k_random_hw4.tsv | grep -vi "return" | wc -l
+  779  tail -n+2 amazon_reviews_10k_random_hw4.tsv | grep -vi "return" | head -n 5 >> regex_report.txt
+  780  vi regex_report.txt
+  781  mkdir -p ids/CUSTOMERS ids/PRODUCTS
+  782  cd ids
+  783  ls
+  784  cd ..
+  785  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f5,8 | sort | uniq | head
+  786  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f5,8 | sort | uniq | tail
+  787  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f5,8 | grep "993977887" | cut -f2 |tee ids/PRODUCTS/993977887.txt
+  788  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f5,8 | grep "105283912" | cut -f2 |tee ids/PRODUCTS/105283912.txt
+  789  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f5,8 | grep "992326428" | cut -f2 |tee ids/PRODUCTS/992326428.txt
+  790  ls ids/PRODUCTS
+  791  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f5,8 | grep "992326428" | cut -f2
+  792  head -n 1 amazon_reviews_10k_random_hw4.tsv
+  793  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f2,8 | sort | uniq | head
+  794  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f2,8 | sort | uniq | tail
+  795  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f2,8 | grep "10279986" | cut -f2 | tee ids/CUSTOMERS/10279986.txt
+  796  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f2,8 | grep "9596183" | cut -f2 | tee ids/CUSTOMERS/9596183.txt
+  797  tail -n+2 amazon_reviews_10k_random_hw4.tsv | cut -f2,8 | grep "10061158" | cut -f2 | tee ids/CUSTOMERS/10061158.txt
+  798  ls ids/CUSTOMERS
+  799  mkdir share
+  800  chmod 770 share
+  801  touch permissions.txt
+  802  ls -ld share | tee permissions.txt
+  803  vi permissions.txt
+  804  cd share
+  805  touch perm1 perm2
+  806  mkdir dir3
+  807  cd ..
+  808  ls -ld share
+  809  cd share
+  810  ls -l
+  811  cd ..
+  812  vi permissions.txt
+  813  chmod -R 770 share
+  814  cd share
+  815  ls -l
+  816  cd ..
+  817  vi permissions.txt
+  818  mv permissions.txt perm_demo.txt
+  819  ls perm*
+  820  ls
+  821  tail -n 3 pipeline_report.txt
+  822  ls
+  823  ls pipeline*
+  824  tail -n 3 pipelines_report.txt
+  825  rm pipeline_report.txt
+  826  echo "Hello world" > notes.txt
+  827  echo "Goodbye world" >> notes.txt
+  828  echo "track errors" 2> notes.txt
+  829  echo "track errors" &> notes.txt
+  830  vi pipelines_txt
+  831  vi pipelines_report.txt
+  832  tail -n+2 amazon_reviews_10k_random_hw4.tsv | grep -ic "Hunger Games" | tee notes.txt
+  833  vi pipelines_report.txt
+  834  ls
+  835  cd hw04
+  836  ls
+  837  vi hw04_run.sh
+  838  cd ids
+  839  cd CUSTOMERS
+  840  ls
+  841  cd ..
+  842  ls PRODUCTS
+  843  cd ..
+  844  vi hw04_run.sh
+  845  vi find_report.txt
+  846  ls
+  847  pwd
+  848  history > hw04_history.txt
