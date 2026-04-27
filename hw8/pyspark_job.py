@@ -10,13 +10,10 @@ spark = (
 
 
 # 1. Read data
-trips = spark.read.parquet(
- "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet"
-)
+trips = spark.read.parquet("gs://hw8-cs131-pp-3/data/yellow_tripdata_2022-01.parquet")
 
 zones = spark.read.option("header", True).csv(
-    "https://d37ci6vzurychx.cloudfront.net/misc/taxi+_zone_lookup.csv"
-)
+"gs://hw8-cs131-pp-3/data/taxi_zone_lookup.csv", header=True)
 zones = zones.withColumn("LocationID", col("LocationID").cast("long"))
 
 
@@ -51,16 +48,21 @@ analysis_a = data.groupBy("Borough", "pickup_hour").agg(count("*").alias("trip_c
 
 
 # Analysis B: Fare/Tip Summary
-analysis_b = data.groupBy("Borough").agg(
-        count("*").alias("trip_count"),
-        avg("fare_amount").alias("avg_fare"),
-        avg("tip_amount").alias("avg_tip")
-    ).orderBy("Borough")
-
+data.createOrReplaceTempView("taxi_data")
+analysis_b = spark.sql("""
+    SELECT
+        Borough,
+        COUNT(*) AS trip_count,
+        AVG(fare_amount) AS avg_fare,
+        AVG(tip_amount) AS avg_tip
+    FROM taxi_data
+    GROUP BY Borough
+    ORDER BY Borough
+""")
 
 # 5. Write output as Parquet
-analysis_a.write.mode("overwrite").parquet("output/analysis_a")
-analysis_b.write.mode("overwrite").parquet("output/analysis_b")
+analysis_a.write.mode("overwrite").parquet("gs://hw8-cs131-pp-3/output/analysis_a")
+analysis_b.write.mode("overwrite").parquet("gs://hw8-cs131-pp-3/output/analysis_b")
 
 # Stop session
 spark.stop()
